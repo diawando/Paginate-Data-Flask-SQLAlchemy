@@ -5,7 +5,7 @@ with app.app_context():
     db.drop_all()
     db.create_all()
     
-e1 = Employee(firstname='John',
+    e1 = Employee(firstname='John',
               lastname='Doe',
               email='jd@example.com',
               age=32,
@@ -13,7 +13,7 @@ e1 = Employee(firstname='John',
               active=True
               )
 
-e2 = Employee(firstname='Mary',
+    e2 = Employee(firstname='Mary',
               lastname='Doe',
               email='md@example.com',
               age=38,
@@ -21,15 +21,15 @@ e2 = Employee(firstname='Mary',
               active=True
               )
 
-e3 = Employee(firstname='Jane',
+    e3 = Employee(firstname='Jane',
               lastname='Tanaka',
               email='jt@example.com',
               age=32,
               hire_date=date(2015, 9, 12),
-              acitve=False
+              active=False
               )
 
-e4 = Employee(firstname='Alex',
+    e4 = Employee(firstname='Alex',
               lastname='Brown',
               email='ab@example.com',
               age=29,
@@ -37,7 +37,7 @@ e4 = Employee(firstname='Alex',
               active=True
               )
 
-e5 = Employee(firstname='James',
+    e5 = Employee(firstname='James',
               lastname='White',
               email='jw@example.com',
               age=24,
@@ -45,7 +45,7 @@ e5 = Employee(firstname='James',
               active=True
               )
 
-e6 = Employee(firstname='harold',
+    e6 = Employee(firstname='harold',
               lastname='Ishida',
               email='hi@example.com',
               age=52,
@@ -53,7 +53,7 @@ e6 = Employee(firstname='harold',
               active=False
               )
 
-e7 = Employee(firstname='Scarlett',
+    e7 = Employee(firstname='Scarlett',
               lastname='Winter',
               email='sw@example.com',
               age=22,
@@ -61,7 +61,7 @@ e7 = Employee(firstname='Scarlett',
               active=True
               )
 
-e8 = Employee(firstname = 'Emily',
+    e8 = Employee(firstname = 'Emily',
               lastname='Vill',
               email='ev@example.com',
               age=27,
@@ -69,7 +69,7 @@ e8 = Employee(firstname = 'Emily',
               active=True
               )
 
-e9 = Employee(firstname='Mary',
+    e9 = Employee(firstname='Mary',
               lastname='Park',
               email='mp@example.com',
               age=30,
@@ -77,6 +77,7 @@ e9 = Employee(firstname='Mary',
               active=True
               )
 
-db.session.add_all([e1, e2, e3, e4, e5, e6, e7, e8, e9])
+    db.session.add_all([e1, e2, e3, e4, e5, e6, e7, e8, e9])
 
-db.session.commit()
+    db.session.commit()
+    
