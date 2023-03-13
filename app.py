@@ -26,5 +26,5 @@ class Employee(db.Model):
 @app.route('/')
 def index():
     page = request.args.get('page', 1, type=int)
-    pagination = Employee.query.order_by(Employee.firstname).paginate(page, per_page=2)
+    pagination = Employee.query.order_by(Employee.firstname).paginate(page=page, per_page=2)
     return render_template('index.html', pagination=pagination)
