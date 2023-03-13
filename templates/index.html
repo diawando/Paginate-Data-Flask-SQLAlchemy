@@ -25,7 +25,7 @@
     <div class="pagination">
         {% if pagination.has_prev %}
             <span>
-                <a class='page-number' href="{{ url_for('index', page-pagination.prev_num) }}">
+                <a class='page-number' href="{{ url_for('index', page=pagination.prev_num) }}">
                     {{ '<<<'}}
                 </a>
             </span>
@@ -35,7 +35,7 @@
             {% if pagination.page != number %}
                 <span>
                     <a class='page-number'
-                        href="{{ url_for('index', page-number) }}">
+                        href="{{ url_for('index', page=number) }}">
                         {{ number }}
                     </a>
                 </span>
